@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="title">Order Details</h2>
+
+<div class="order-item">
+  <span>Cheese Pizza</span>
+  <div class="qty">
+    <button onclick="decrease()">-</button>
+    <span id="quantity">1</span>
+    <button onclick="increase()">+</button>
+  </div>
+  <span>৳<span id="price">250</span></span>
+</div>
+
+<div class="price-box">
+  <p>Subtotal: ৳<span id="subtotal">250</span></p>
+  <p>Delivery Fee: ৳50</p>
+  <h3>Total: ৳<span id="total">300</span></h3>
+</div>
+
+<div class="actions">
+  <button class="checkout">Place Order</button>
+  <a href="index.html">Continue Shopping</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
