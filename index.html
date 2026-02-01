@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>FoodHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,9 +13,9 @@
   <div class="container nav-flex">
     <h2 class="logo">FoodHub</h2>
     <ul class="nav-links">
-      <li>Home</li>
+      <li><a href="index.html">Home</a></li>
       <li>Menu</li>
-      <li>Cart 🛒</li>
+      <li><a href="order.html">Cart 🛒</a></li>
     </ul>
   </div>
 </nav>
@@ -32,113 +33,149 @@
   </div>
 </section>
 
-<!-- PIZZA -->
+<!-- ================= PIZZA CATEGORY ================= -->
 <section class="container">
-<h2 class="category-title">🍕 Pizza</h2>
-<div class="food-grid">
+  <h2 class="category-title">🍕 Pizza</h2>
 
-  <div class="food-card">
-    <img src="images/cheese-pizza.jpg">
-    <h4>Cheese Pizza</h4>
-    <p class="price">৳250</p>
-    <p class="desc">Extra cheese loaded pizza</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a href="order.html" class="buy-btn">Buy Now</a>
+  <div class="food-grid">
+
+    <!-- 1 -->
+    <div class="food-card">
+      <img src="https://cdn.pixabay.com/photo/2018/03/15/07/06/food-3227303_1280.jpg">
+      <h4>Cheese Pizza</h4>
+      <p class="price">৳250</p>
+      <p class="desc">Extra cheese loaded pizza</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Cheese Pizza',250,'https://cdn.pixabay.com/photo/2018/03/15/07/06/food-3227303_1280.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="food-card">
-    <img src="images/pepperoni-pizza.jpg">
-    <h4>Pepperoni Pizza</h4>
-    <p class="price">৳300</p>
-    <p class="desc">Spicy pepperoni topping</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a href="order.html" class="buy-btn">Buy Now</a>
+    <!-- 2 -->
+    <div class="food-card">
+      <img src="https://media.istockphoto.com/id/521403691/photo/hot-homemade-pepperoni-pizza.jpg">
+      <h4>Pepperoni Pizza</h4>
+      <p class="price">৳300</p>
+      <p class="desc">Spicy pepperoni topping</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Pepperoni Pizza',300,'https://media.istockphoto.com/id/521403691/photo/hot-homemade-pepperoni-pizza.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="food-card">
-    <img src="images/veg-pizza.jpg">
-    <h4>Veg Pizza</h4>
-    <p class="price">৳220</p>
-    <p class="desc">Fresh vegetables & cheese</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a href="order.html" class="buy-btn">Buy Now</a>
+    <!-- 3 -->
+    <div class="food-card">
+      <img src="https://media.istockphoto.com/id/1349383878/photo/hawaiian-pizza-with-ham-and-pineapple.jpg">
+      <h4>Hawaiian Pizza</h4>
+      <p class="price">৳280</p>
+      <p class="desc">Ham & pineapple topping</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Hawaiian Pizza',280,'https://media.istockphoto.com/id/1349383878/photo/hawaiian-pizza-with-ham-and-pineapple.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="food-card">
-    <img src="images/bbq-pizza.jpg">
-    <h4>BBQ Pizza</h4>
-    <p class="price">৳280</p>
-    <p class="desc">Smoky BBQ chicken pizza</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a href="order.html" class="buy-btn">Buy Now</a>
+    <!-- 4 -->
+    <div class="food-card">
+      <img src="https://cdn.pixabay.com/photo/2021/04/04/10/21/pizza-6149629_1280.jpg">
+      <h4>Veggie Pizza</h4>
+      <p class="price">৳220</p>
+      <p class="desc">Fresh vegetables & cheese</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Veggie Pizza',220,'https://cdn.pixabay.com/photo/2021/04/04/10/21/pizza-6149629_1280.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-</div>
+  </div>
 </section>
 
-<!-- BURGER -->
+<!-- ================= BURGER CATEGORY ================= -->
 <section class="container">
-<h2 class="category-title">🍔 Burger</h2>
-<div class="food-grid">
+  <h2 class="category-title">🍔 Burger</h2>
 
-  <div class="food-card">
-    <img src="https://i.imgur.com/3ZQ3ZQp.png">
-    <h4>Chicken Burger</h4>
-    <p class="price">৳180</p>
-    <p class="desc">Crispy chicken patty</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a class="buy-btn">Buy Now</a>
+  <div class="food-grid">
+
+    <!-- 5 -->
+    <div class="food-card">
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/burger-1238245_1280.jpg">
+      <h4>Cheese Burger</h4>
+      <p class="price">৳180</p>
+      <p class="desc">Juicy beef & cheese</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Cheese Burger',180,'https://cdn.pixabay.com/photo/2016/03/05/19/02/burger-1238245_1280.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="food-card">
-    <img src="https://i.imgur.com/1X9X9X1.png">
-    <h4>Beef Burger</h4>
-    <p class="price">৳220</p>
-    <p class="desc">Juicy beef burger</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a class="buy-btn">Buy Now</a>
+    <!-- 6 -->
+    <div class="food-card">
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/double-burger-1238246_1280.jpg">
+      <h4>Double Burger</h4>
+      <p class="price">৳220</p>
+      <p class="desc">Two juicy beef patties</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Double Burger',220,'https://cdn.pixabay.com/photo/2016/03/05/19/02/double-burger-1238246_1280.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="food-card">
-    <img src="https://i.imgur.com/2B2B2B2.png">
-    <h4>Cheese Burger</h4>
-    <p class="price">৳200</p>
-    <p class="desc">Cheese filled burger</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a class="buy-btn">Buy Now</a>
+    <!-- 7 -->
+    <div class="food-card">
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/chicken-burger-1238247_1280.jpg">
+      <h4>Chicken Burger</h4>
+      <p class="price">৳200</p>
+      <p class="desc">Crispy fried chicken</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Chicken Burger',200,'https://cdn.pixabay.com/photo/2016/03/05/19/02/chicken-burger-1238247_1280.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="food-card">
-    <img src="https://i.imgur.com/4C4C4C4.png">
-    <h4>Double Burger</h4>
-    <p class="price">৳260</p>
-    <p class="desc">Double patty burger</p>
-    <div class="btn-group">
-      <button class="cart-btn">Add to Cart</button>
-      <a class="buy-btn">Buy Now</a>
+    <!-- 8 -->
+    <div class="food-card">
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/veggie-burger-1238248_1280.jpg">
+      <h4>Veggie Burger</h4>
+      <p class="price">৳160</p>
+      <p class="desc">Fresh vegetables patty</p>
+      <div class="btn-group">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn"
+          onclick="buyNow('Veggie Burger',160,'https://cdn.pixabay.com/photo/2016/03/05/19/02/veggie-burger-1238248_1280.jpg')">
+          Buy Now
+        </button>
+      </div>
     </div>
-  </div>
 
-</div>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 FoodHub. All rights reserved.</p>
 </footer>
 
+<script src="home.js"></script>
 </body>
 </html>

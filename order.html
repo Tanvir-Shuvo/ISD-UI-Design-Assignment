@@ -2,34 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Order Details</title>
+  <title>Order Details - FoodHub</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2 class="title">Order Details</h2>
-
-<div class="order-item">
-  <span>Cheese Pizza</span>
-  <div class="qty">
-    <button onclick="decrease()">-</button>
-    <span id="quantity">1</span>
-    <button onclick="increase()">+</button>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-flex">
+    <h2 class="logo">FoodHub</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>Menu</li>
+      <li>Cart 🛒</li>
+    </ul>
   </div>
-  <span>৳<span id="price">250</span></span>
-</div>
+</nav>
 
-<div class="price-box">
-  <p>Subtotal: ৳<span id="subtotal">250</span></p>
-  <p>Delivery Fee: ৳50</p>
-  <h3>Total: ৳<span id="total">300</span></h3>
-</div>
+<section class="container" style="margin-top:20px;">
+  <h2 class="category-title">🛒 Order Details</h2>
 
-<div class="actions">
-  <button class="checkout">Place Order</button>
-  <a href="index.html">Continue Shopping</a>
-</div>
+  <!-- ORDER SUMMARY -->
+  <div id="order-summary"></div>
 
-<script src="script.js"></script>
+  <!-- PRICING BREAKDOWN -->
+  <div id="pricing" style="margin-top:20px; border-top:1px solid #ddd; padding-top:15px;">
+    <p>Subtotal: ৳<span id="subtotal">0</span></p>
+    <p>Delivery Fee: ৳<span id="delivery">50</span></p>
+    <p>Tax: ৳<span id="tax">0</span></p>
+    <h3>Total: ৳<span id="total">0</span></h3>
+  </div>
+
+  <!-- USER ACTION BUTTONS -->
+  <div style="margin-top:20px;">
+    <button class="buy-btn">Proceed to Checkout</button>
+    <a href="index.html" class="cart-btn" style="text-decoration:none;">Continue Shopping</a>
+  </div>
+</section>
+
+<script src="order.js"></script>
+
 </body>
 </html>

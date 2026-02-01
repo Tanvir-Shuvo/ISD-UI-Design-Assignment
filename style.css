@@ -257,3 +257,153 @@ footer {
         width: 95%;
     }
 }
+
+/* ============================================== */
+
+/* =====================
+   ORDER DETAILS PAGE
+===================== */
+.page-title {
+  padding: 20px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* ORDER SUMMARY */
+.order-section {
+  margin-bottom: 20px;
+}
+
+/* Each Order Item */
+.order-item {
+  display: grid;
+  grid-template-columns: 80px 2fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.food-image img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.food-info h4 {
+  font-size: 18px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f7f7f7;
+  transition: 0.2s;
+}
+
+.quantity button:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+.quantity span {
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+.item-price, .remove {
+  text-align: center;
+}
+
+.remove button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f7f7f7;
+  transition: 0.3s;
+}
+
+.remove button:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* PRICING BREAKDOWN */
+.price-section {
+  background: #f9f9f9;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  border-radius: 8px;
+}
+
+.price-section p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.price-section h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ff4d4d;
+}
+
+/* USER ACTION BUTTONS */
+.action-buttons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.checkout-btn {
+  background: green;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 15px;
+}
+
+.checkout-btn:hover {
+  background: #006600;
+}
+
+.back-home {
+  padding: 12px 25px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.back-home:hover {
+  background: #ff4d4d;
+  color: white;
+  border-color: #ff4d4d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .order-item {
+    grid-template-columns: 70px 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .item-price, .remove {
+    text-align: left;
+  }
+}
+
